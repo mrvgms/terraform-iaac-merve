@@ -1,17 +1,17 @@
-output "VPC_ID" {
-  value = "${module.dev.VPC_ID}"
+output "vpc_ID" {
+  value = "${module.dev.vpc_ID}"
 }
 
 output "subnet1" {
-  value = "${module.dev.Subnet1}"
+  value = "${module.dev.subnet1}"
 }
 
 output "subnet2" {
-  value = "${module.dev.Subnet2}"
+  value = "${module.dev.subnet2}"
 }
 
 output "subnet3" {
-  value = "${module.dev_Private3.Subnet3}"
+  value = "${module.dev.subnet3}"
 }
 
 output "Private_Subnet1" {
