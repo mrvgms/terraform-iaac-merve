@@ -56,18 +56,25 @@ resource "aws_instance" "web" {
   instance_type = "t2.micro"
   key_name = "${aws_key_pair.provisioner.key_name}"
 
-provisioner "file" {
+  provisioner "file" {
     connection {
     type     = "ssh"
     user     = "centos"
     private_key = "${file("~/.ssh/id_rsa")}"
     host     = "${self.public_ip}"
-         }
-   source      = "test"
-   destination = "/tmp/"
+      }
+    source      = "test"
+    destination = "/tmp/"
     }
-
-
+    provisioner "remote-exec" {
+    onnection {
+    type     = "ssh"
+    user     = "centos"
+    private_key = "${file("~/.ssh/id_rsa")}"
+    host     = "${self.public_ip}"
+      }
+        inline = "sudo yum install telnet -y"
+    }
 
   tags = {
     Name = "HelloWorld"
