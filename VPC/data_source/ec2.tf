@@ -51,9 +51,10 @@ resource "aws_key_pair" "provisioner" {
   public_key = "${file("~/.ssh/id_rsa.pub")}""
 
 
-resource "aws_instance" "web" {
-  ami           = "${data.aws_ami.centos.id}"
-  instance_type = "t2.micro"
+resource "aws_key_pair" "provisioner" {
+  key_name   = "provisioner-key"
+  public_key = "${file("~/.ssh/id_rsa.pub")}"
+}
 
   tags = {
     Name = "HelloWorld"
