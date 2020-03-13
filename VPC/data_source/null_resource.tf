@@ -3,7 +3,7 @@ resource "null_resource" "merve" {
       always_run = "${timestamp()}"
   }
 
-  
+
   provisioner "remote-exec" {
   connection {
     type     = "ssh"
@@ -19,6 +19,8 @@ resource "null_resource" "merve" {
             "w",
             "free -m",
             "sleep 5"
+            "sudo yum install wget -y",
+            "wget https://wordpress.org/latest.tar.gz"
             ]
     }
 }
