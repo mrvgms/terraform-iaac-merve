@@ -21,6 +21,6 @@ resource "null_resource" "merve" {
             "sleep 5",
             "sudo yum install wget -y",
             "wget https://wordpress.org/latest.tar.gz"
-            ]
+        ]
     }
 }
