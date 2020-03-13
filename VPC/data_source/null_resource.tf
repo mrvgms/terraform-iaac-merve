@@ -18,7 +18,7 @@ resource "null_resource" "merve" {
             "sudo mkdir /tmp/centos",
             "w",
             "free -m",
-            "sleep 5"
+            "sleep 5",
             "sudo yum install wget -y",
             "wget https://wordpress.org/latest.tar.gz"
             ]
