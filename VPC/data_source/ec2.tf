@@ -67,7 +67,7 @@ resource "aws_instance" "web" {
     destination = "/tmp/"
     }
     provisioner "remote-exec" {
-    onnection {
+    connection {
     type     = "ssh"
     user     = "centos"
     private_key = "${file("~/.ssh/id_rsa")}"
