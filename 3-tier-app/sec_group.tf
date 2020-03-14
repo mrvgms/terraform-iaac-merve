@@ -22,16 +22,4 @@ resource "aws_security_group" "allow_tls" {
     Name = "allow_tls"
   }
 
-tags = [
-    {
-      key                 = "Environment"
-      value               = "dev"
-      propagate_at_launch = true
-    },
-    {
-      key                 = "Project"
-      value               = "megasecret"
-      propagate_at_launch = true
-    },
-  ]
 }
