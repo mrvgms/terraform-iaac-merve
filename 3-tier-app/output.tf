@@ -1,5 +1,5 @@
-output "VPC_ID" {
-  value = "${data.terraform_remote_state.dev.VPC_ID}"
+output "vpc_ID" {
+  value = "${data.terraform_remote_state.dev.vpc_ID}"
 }
 
 output "Subnet1" {
