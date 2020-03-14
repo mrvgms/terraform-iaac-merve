@@ -1,4 +1,5 @@
 module "wordpress" {
+  name = "wordpress"
   source = "terraform-aws-modules/autoscaling/aws"
   version = "2.12.0"
   lc_name = "wordpress-lc"
