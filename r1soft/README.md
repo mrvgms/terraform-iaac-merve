@@ -17,5 +17,3 @@ source setenv.sh configurations/r1soft.rfvars
 terraform apply -var-file configurations/r1soft.rfvars 
 
 this file has been updated
-its updated
-updates
