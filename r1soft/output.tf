@@ -8,4 +8,7 @@ output "User" {
  value = "${module.r1soft.User}"
 }
 
-oljkkljk
+ output "name" {
+  value       = 
+  description = ""
+}
