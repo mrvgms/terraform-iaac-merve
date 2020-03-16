@@ -8,4 +8,4 @@ output "User" {
  value = "${module.r1soft.User}"
 }
 
-outpu
+out
