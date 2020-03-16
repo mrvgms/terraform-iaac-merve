@@ -15,3 +15,5 @@ vi configurations/r1soft.tfvars
 
 source setenv.sh configurations/r1soft.rfvars 
 terraform apply -var-file configurations/r1soft.rfvars 
+
+terraform
