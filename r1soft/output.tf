@@ -7,17 +7,3 @@ output "Domain" {
 output "User" {
  value = "${module.r1soft.User}"
 }
-
- output "name" {
-  value       = 
-  description = ""
-}
-
-output "name" {
-  value       = 
-  description = ""
-}
-
-output "name" {
-  value       = 
-  description = ""
