@@ -12,3 +12,8 @@ output "User" {
   value       = 
   description = ""
 }
+
+output "name" {
+  value       = 
+  description = ""
+}
