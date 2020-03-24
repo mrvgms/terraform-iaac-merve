@@ -1,1 +1,0 @@
-# terraform-iaac-merve2
