@@ -10,3 +10,5 @@ variable "environment" {}
 variable "node_pool_name" {}
 variable "kubernetes_version" {}
 variable "username" {}
+
+variable "uses" {}
