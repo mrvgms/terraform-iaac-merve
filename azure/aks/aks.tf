@@ -13,6 +13,3 @@ module "cluster" {
     username                                =   var.username
     vm_size                                 =   var.vm_size
 }
-    
-    
-    
