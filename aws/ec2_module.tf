@@ -2,5 +2,3 @@ module "wordpress" {
   source  = "./module"
 }
 
-  
-  
